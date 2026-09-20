@@ -36,3 +36,11 @@ The phone viewport is responsive-layout testing, not a substitute for testing re
 - TypeScript validation and production build pass.
 - Browser: purchased an affordable upgrade; five queued one-charge shots cost five sparks and defeated a 10 HP mob. Reload retained the defeat and spark balance.
 - Desktop and 390px mobile layouts inspected; all three navigation destinations remain accessible. No browser console errors observed. Native packages have not been retested for this update.
+
+
+## Tesla survival update
+
+- 18 simulation tests pass. Added coverage for weighted generator pressure, spawn rate, strict power comparison, per-tick spending, insufficient funds, delayed full-game loss, persistence/migration, and prestige locking.
+- TypeScript validation and production build pass.
+- Local browser test started survival with disposable test progress, exhausted its sparks, observed the full-loss dialog, and reloaded to confirm zero sparks/cores/machines, an empty journal, and a fresh workshop save.
+- Inspected desktop and 390px mobile Tesla layouts and navigation; no console errors observed. The live player save was not used for destructive testing.

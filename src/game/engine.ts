@@ -1,3 +1,4 @@
+import { freshTesla, parseTesla, type TeslaState } from './tesla';
 import { freshCombat, parseCombat, type CombatState } from './combat';
 /** Pure simulation shared by web, mobile and desktop. All durations are seconds. */
 export const MACHINES = [
@@ -13,14 +14,14 @@ export const UPGRADES = [
 export type UpgradeId = typeof UPGRADES[number]['id'];
 export interface MachineState { owned: number; manager: boolean; remaining: number }
 export interface GameState {
-  combat: CombatState; sound: boolean;
+  tesla: TeslaState; combat: CombatState; sound: boolean;
   version: 1; sparks: number; earned: number; lifetime: number; cores: number; resets: number;
   machines: MachineState[]; upgrades: UpgradeId[]; lastSaved: number;
   clicks: number; mastered: boolean; reducedMotion: boolean; discoveries: number[];
 }
 export const OFFLINE_CAP = 8 * 60 * 60;
 export function freshState(now = Date.now()): GameState {
-  return { combat: freshCombat(), sound: true, version: 1, sparks: 0, earned: 0, lifetime: 0, cores: 0, resets: 0,
+  return { tesla: freshTesla(), combat: freshCombat(), sound: true, version: 1, sparks: 0, earned: 0, lifetime: 0, cores: 0, resets: 0,
     machines: MACHINES.map(() => ({ owned: 0, manager: false, remaining: 0 })),
     upgrades: [], lastSaved: now, clicks: 0, mastered: false, reducedMotion: false, discoveries: [] };
 }
@@ -96,7 +97,7 @@ export function upgrade(s: GameState, id: UpgradeId): GameState {
 }
 export function prestigeReward(s: GameState) { return Math.floor(Math.sqrt(s.earned / 10000)); }
 export function prestige(s: GameState): GameState {
-  const reward = prestigeReward(s); if (!reward) return s;
+  const reward = prestigeReward(s); if (s.tesla.active || !reward) return s;
   return recordDiscoveries({ ...freshState(), combat: s.combat, sound: s.sound, lifetime: s.lifetime, cores: s.cores + reward, resets: s.resets + 1, mastered: s.mastered, reducedMotion: s.reducedMotion, clicks: s.clicks, discoveries: recordDiscoveries(s).discoveries });
 }
 export function format(value: number) {
@@ -123,7 +124,7 @@ export function parseSave(raw: string): GameState {
   if (s.discoveries !== undefined && (!Array.isArray(s.discoveries) || s.discoveries.length > 5 || s.discoveries.some((v: unknown) => !Number.isInteger(v) || (v as number) < 0 || (v as number) > 4))) throw new Error('Invalid discoveries.');
   if (s.sound !== undefined && typeof s.sound !== 'boolean') throw new Error('Invalid sound setting.');
   // Reconstruct known fields, never merge arbitrary imported properties.
-  return { combat: parseCombat(s.combat), sound: s.sound ?? true, version: 1, sparks: s.sparks, earned: s.earned, lifetime: s.lifetime, cores: s.cores, resets: s.resets, clicks: s.clicks,
+  return { tesla: parseTesla(s.tesla), combat: parseCombat(s.combat), sound: s.sound ?? true, version: 1, sparks: s.sparks, earned: s.earned, lifetime: s.lifetime, cores: s.cores, resets: s.resets, clicks: s.clicks,
     machines: s.machines.map((m: MachineState) => ({ owned: m.owned, manager: m.manager, remaining: m.remaining })),
     upgrades: s.upgrades, lastSaved: s.lastSaved, mastered: s.mastered, reducedMotion: s.reducedMotion, discoveries: s.discoveries ?? [] };
 }

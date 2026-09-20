@@ -81,3 +81,10 @@ The sidebar opens a ten-stage cannon minigame using the workshop spark balance. 
 One charge costs one spark and deals two damage. Choose a charge and queue 1, 5, or 10 shots at a time, up to 50 outstanding shots. Charges are paid upfront; shots fire every 0.7 seconds while the combat view is visible. Excess damage is discarded. Cancelling refunds unfired charges; clearing the last boss refunds the remaining queue. Combat and prepaid shots survive saves and rekindling, and pause away from combat. Existing workshop saves migrate automatically.
 
 Successful workshop upgrades produce a spark burst and a synthesized zap. Cannon shots have muzzle, beam, impact, and recoil effects. Settings include sound and reduced-motion controls; no audio asset downloads are needed.
+
+
+## Tesla survival
+
+Mobs and Bosses now contains separate Cannon campaign and Tesla survival modes. Tesla is opt-in because failure wipes all progression. Each visible-play second spends the allocated whole sparks (default 1), supplying one power per spark actually paid. An intact coil draws power even with no enemies nearby. At the coil, power must be strictly greater than mob strength; ties and insufficient power break the coil. Three more ticks carry the breached mob to the far edge and reset the entire game. Sound and reduced-motion preferences are retained, but sparks, machines, upgrades, cores, lifetime records, journal, cannon campaign/queue, and Tesla progress are erased and the fresh save is written.
+
+Generator threat is `coils + 4 × wheels + 12 × dynamos`. New mobs have `1 + threat` strength and spawn every `max(1, 6 - floor(threat / 20))` seconds. Existing mobs keep their spawn strength. Mobs enter at the right, reach the coil after seven movement ticks, and breach the left edge three ticks later. The defense continues across in-game screens, pauses while the browser/app is hidden, and saves active enemies across reloads without offline attacks. Rekindling is locked during an active run.
