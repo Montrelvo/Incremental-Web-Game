@@ -72,3 +72,12 @@ The packaging command creates an unpacked app for the current host. To produce i
 The first release is a single-player game with local saves. No accounts, multiplayer, advertising, payments, cloud saves, or background server is needed. Unit tests cover the opening loop, manual/automated cycles, offline versus stepped simulation, bulk prices, milestones, reset retention, clock changes, and invalid saves.
 
 Cross-platform support is an architecture and build target; validate actual Safari/iOS, Android, macOS, and Linux releases on those devices before shipping them. Read [the mechanics research](IDLE_MECHANICS_RESEARCH.md) for the larger atlas and proposed future chapters.
+
+
+## Mobs and Bosses
+
+The sidebar opens a ten-stage cannon minigame using the workshop spark balance. Each stage contains four metal mobs, one mini boss, four more mobs, and one stage boss (100 enemies total). Regular mob HP is `10 × stage`; mini bosses have twice that HP and stage bosses four times that HP. Stage 1 starts at 10 / 20 / 40 HP; stage 10 reaches 100 / 200 / 400 HP.
+
+One charge costs one spark and deals two damage. Choose a charge and queue 1, 5, or 10 shots at a time, up to 50 outstanding shots. Charges are paid upfront; shots fire every 0.7 seconds while the combat view is visible. Excess damage is discarded. Cancelling refunds unfired charges; clearing the last boss refunds the remaining queue. Combat and prepaid shots survive saves and rekindling, and pause away from combat. Existing workshop saves migrate automatically.
+
+Successful workshop upgrades produce a spark burst and a synthesized zap. Cannon shots have muzzle, beam, impact, and recoil effects. Settings include sound and reduced-motion controls; no audio asset downloads are needed.
