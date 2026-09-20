@@ -1,0 +1,74 @@
+# Spark Workshop
+
+A little effort. A clever machine. Something that keeps on growing.
+
+Spark Workshop is the first playable chapter of **The Incremental Atlas**: a collection of experiments that let players explore incremental and idle game mechanics. Build copper coils, induction wheels, and arc dynamos; hire managers; discover production milestones; and rekindle for permanent power.
+
+**Play:** https://Montrelvo.github.io/Incremental-Web-Game/
+
+## Development
+
+Use **Node.js 24 LTS** and npm.
+
+```sh
+npm ci
+npm run dev
+npm test
+npm run build
+npm run preview
+```
+
+## How to play
+
+1. Generate 12 sparks and build your first copper coil.
+2. Run machine cycles manually. Hire a manager to restart them automatically.
+3. Buy more machines. Each group of 10 doubles that machine type's output; purchases cost 15% more each time, rounded up. Each type is capped at 100 machines.
+4. Buy upgrades and automate all three machine types. Reach 25,000 lifetime sparks with all managers hired to finish the chapter.
+5. Optional: rekindle after earning 10,000 sparks in a run. Each ember core adds 25% to future production. The confirmation panel shows exactly what resets and what stays.
+
+Managers work while you are away, up to 8 hours per absence. Manual cycles finish once and stop. Save automatically every five seconds, after actions, and on lifecycle events. Settings supports save export/import, reduced motion, and a confirmed fresh start. Export saves before moving between devices: cloud sync is not included.
+
+## Shared architecture
+
+| Layer | Responsibility |
+| --- | --- |
+| `src/game/engine.ts` | Pure TypeScript economy, elapsed-time simulation, validation, prestige |
+| `src/App.tsx` | React interface, lifecycle, interaction, field journal |
+| `src/components/Workshop.tsx` | Phaser illustration; game rules never depend on rendered frames |
+| `src/platform/storage.ts` | Browser/Electron localStorage and native Capacitor Preferences |
+| `capacitor.config.ts` | Android/iOS packaging configuration |
+| `electron/main.cjs` | Sandboxed desktop window |
+
+The same interface and simulation serve all platforms. Layout supports narrow touch screens, keyboard controls, and wide desktop windows. Browser background throttling does not determine earnings; the simulation catches up from timestamps. Fonts have system fallbacks when offline. Import validation rejects malformed saves; unreadable existing saves are preserved until explicitly replaced.
+
+## GitHub Pages
+
+The workflow in `.github/workflows/pages.yml` tests and builds on pushes to `main`, then deploys `dist` to Pages. Set **Settings → Pages → Source → GitHub Actions**. Pull requests run the build and tests without deployment. Vite uses relative asset paths so this project works at `/Incremental-Web-Game/` and within native containers.
+
+## Mobile apps
+
+```sh
+npm run build
+npm run mobile:android
+npm run mobile:ios
+npm run mobile:sync
+npx cap open android
+npx cap open ios
+```
+
+Add each platform once. Generated `android/` and `ios/` directories are local build outputs, intentionally ignored. Android requires Android Studio and its SDK. iOS requires macOS and Xcode, locally or on a build host. Store releases require signing and device testing; a browser build is not evidence of App Store readiness. Native project generation and signed mobile binaries are not required for the first Pages release.
+
+## Desktop apps
+
+```sh
+npm run desktop
+npm run desktop:package
+```
+
+The packaging command creates an unpacked app for the current host. To produce installers, use `npx electron-builder --win`, `--mac`, or `--linux` on an appropriate build host. Signing, notarization, store integration, and automatic updates are separate release steps. Electron has Node integration disabled, context isolation enabled, and sandboxing enabled.
+
+## Scope and testing
+
+The first release is a single-player game with local saves. No accounts, multiplayer, advertising, payments, cloud saves, or background server is needed. Unit tests cover the opening loop, manual/automated cycles, offline versus stepped simulation, bulk prices, milestones, reset retention, clock changes, and invalid saves.
+
+Cross-platform support is an architecture and build target; validate actual Safari/iOS, Android, macOS, and Linux releases on those devices before shipping them. Read [the mechanics research](IDLE_MECHANICS_RESEARCH.md) for the larger atlas and proposed future chapters.
