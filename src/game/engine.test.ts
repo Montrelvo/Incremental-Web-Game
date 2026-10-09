@@ -29,14 +29,11 @@ describe('shared workshop simulation', () => {
     expect(resume(s, 0).gained).toBe(0);
     expect(resume(s, 100000 + 1000 * 86400).gained).toBe(OFFLINE_CAP);
   });
-  it('rekindles with a previewable reward and keeps permanent progress', () => {
-    const s = freshState(); s.earned = 40000; s.lifetime = 50000; s.cores = 2; s.mastered = true;
-    s.machines[0] = { owned: 10, manager: true, remaining: 3 };
+  it('preserves legacy cores and blocks expedition resets until redesigned', () => {
+    const s = freshState(); s.earned = 40000; s.lifetime = 50000; s.cores = 2;
+    s.frontier.scrap = 10; s.frontier.claimed = 1;
     expect(prestigeReward(s)).toBe(2);
-    const p = prestige(s); expect(p.cores).toBe(4); expect(p.sparks).toBe(0);
-    expect(p.lifetime).toBe(50000); expect(p.mastered).toBe(true); expect(p.resets).toBe(1);
-    expect(p.discoveries).toEqual(expect.arrayContaining([0, 1, 2, 4]));
-    expect(p.machines.every(m => !m.manager && !m.owned)).toBe(true);
+    expect(prestige(s)).toBe(s);
   });
   it('completes the chapter only after reaching the goal with all managers', () => {
     let s = freshState(); s.lifetime = 24999;
@@ -46,7 +43,7 @@ describe('shared workshop simulation', () => {
   });
   it('rejects corrupted and unsupported saves', () => {
     const s = freshState(); expect(parseSave(JSON.stringify(s))).toEqual(s);
-    expect(() => parseSave('{')).toThrow(); expect(() => parseSave(JSON.stringify({ ...s, version: 2 }))).toThrow();
+    expect(() => parseSave('{')).toThrow(); expect(() => parseSave(JSON.stringify({ ...s, version: 3 }))).toThrow();
     expect(() => parseSave(JSON.stringify({ ...s, sparks: -1 }))).toThrow();
     expect(() => parseSave(JSON.stringify({ ...s, upgrades: ['nope'] }))).toThrow();
     s.machines[0].owned = 1000; expect(() => parseSave(JSON.stringify(s))).toThrow();
