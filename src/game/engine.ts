@@ -1,8 +1,9 @@
+import { freshFrontier, parseFrontier, ownershipLimit, type FrontierState } from './frontier';
 import { freshTesla, parseTesla, type TeslaState } from './tesla';
 import { freshCombat, parseCombat, type CombatState } from './combat';
 /** Pure simulation shared by web, mobile and desktop. All durations are seconds. */
 export const MACHINES = [
-  { id: 'coil', name: 'Copper coil', description: 'A little wire. A lot of potential.', cost: 12, seconds: 3, yield: 3, manager: 35, role: 'Coil keeper', color: '#b77542' },
+  { id: 'coil', name: 'Coil generator', description: 'A little wire. A lot of potential.', cost: 12, seconds: 3, yield: 3, manager: 35, role: 'Coil keeper', color: '#b77542' },
   { id: 'wheel', name: 'Induction wheel', description: 'Turn a steady rhythm into energy.', cost: 70, seconds: 5, yield: 25, manager: 160, role: 'Wheel tender', color: '#668572' },
   { id: 'dynamo', name: 'Arc dynamo', description: 'Small lightning, carefully contained.', cost: 320, seconds: 8, yield: 192, manager: 650, role: 'Arc engineer', color: '#667f92' },
 ] as const;
@@ -14,19 +15,19 @@ export const UPGRADES = [
 export type UpgradeId = typeof UPGRADES[number]['id'];
 export interface MachineState { owned: number; manager: boolean; remaining: number }
 export interface GameState {
-  tesla: TeslaState; combat: CombatState; sound: boolean;
-  version: 1; sparks: number; earned: number; lifetime: number; cores: number; resets: number;
+  frontier: FrontierState; tesla: TeslaState; combat: CombatState; sound: boolean;
+  version: 2; sparks: number; earned: number; lifetime: number; cores: number; resets: number;
   machines: MachineState[]; upgrades: UpgradeId[]; lastSaved: number;
-  clicks: number; mastered: boolean; reducedMotion: boolean; discoveries: number[];
+  legacyDiscoveries: number[]; clicks: number; mastered: boolean; reducedMotion: boolean; discoveries: number[];
 }
 export const OFFLINE_CAP = 8 * 60 * 60;
 export function freshState(now = Date.now()): GameState {
-  return { tesla: freshTesla(), combat: freshCombat(), sound: true, version: 1, sparks: 0, earned: 0, lifetime: 0, cores: 0, resets: 0,
+  return { frontier: freshFrontier(), tesla: freshTesla(), combat: freshCombat(), sound: true, version: 2, sparks: 0, earned: 0, lifetime: 0, cores: 0, resets: 0,
     machines: MACHINES.map(() => ({ owned: 0, manager: false, remaining: 0 })),
-    upgrades: [], lastSaved: now, clicks: 0, mastered: false, reducedMotion: false, discoveries: [] };
+    upgrades: [], lastSaved: now, legacyDiscoveries: [], clicks: 0, mastered: false, reducedMotion: false, discoveries: [] };
 }
 export function recordDiscoveries(s: GameState): GameState {
-  const unlocked = [s.machines[0].owned > 0, s.machines.some(m => m.manager), s.machines.some(m => m.owned >= 10), s.upgrades.includes('wiring'), s.resets > 0];
+  const unlocked = [s.machines[0].owned > 0, s.machines.some(m => m.manager), s.frontier.defeated > 0, Object.values(s.frontier.upgrades).some(n => n > 0), s.frontier.claimed > 0];
   return { ...s, discoveries: [...new Set([...s.discoveries, ...unlocked.flatMap((yes, i) => yes ? [i] : [])])] };
 }
 export function multiplier(s: GameState) {
@@ -61,14 +62,14 @@ export function advance(s: GameState, elapsed: number): GameState {
 }
 export function cost(s: GameState, i: number, quantity = 1) {
   const owned = s.machines[i].owned;
-  if (quantity < 1 || quantity > 100 - owned) return Infinity;
+  if (quantity < 1 || quantity > ownershipLimit(s) - owned) return Infinity;
   let sum = 0;
   for (let n = 0; n < quantity; n++) sum += Math.ceil(MACHINES[i].cost * 1.15 ** (owned + n));
   return sum;
 }
 export function affordable(s: GameState, i: number) {
   let quantity = 0, total = 0;
-  while (s.machines[i].owned + quantity < 100) {
+  while (s.machines[i].owned + quantity < ownershipLimit(s)) {
     const next = Math.ceil(MACHINES[i].cost * 1.15 ** (s.machines[i].owned + quantity));
     if (total + next > s.sparks) break;
     total += next; quantity++;
@@ -96,10 +97,8 @@ export function upgrade(s: GameState, id: UpgradeId): GameState {
   const next = structuredClone(s); next.sparks -= item.cost; next.upgrades.push(id); return next;
 }
 export function prestigeReward(s: GameState) { return Math.floor(Math.sqrt(s.earned / 10000)); }
-export function prestige(s: GameState): GameState {
-  const reward = prestigeReward(s); if (s.tesla.active || !reward) return s;
-  return recordDiscoveries({ ...freshState(), combat: s.combat, sound: s.sound, lifetime: s.lifetime, cores: s.cores + reward, resets: s.resets + 1, mastered: s.mastered, reducedMotion: s.reducedMotion, clicks: s.clicks, discoveries: recordDiscoveries(s).discoveries });
-}
+/** Expedition resets are deferred; preserve all progression until their rules are defined. */
+export function prestige(s: GameState): GameState { return s; }
 export function format(value: number) {
   if (!Number.isFinite(value)) return '—';
   if (value < 1000) return Math.floor(value).toLocaleString('en-US');
@@ -109,7 +108,7 @@ export function rateFormat(value: number) { return value < 100 ? value.toFixed(1
 export function parseSave(raw: string): GameState {
   if (raw.length > 50000) throw new Error('This save is too large.');
   const s = JSON.parse(raw);
-  if (!s || typeof s !== 'object' || s.version !== 1) throw new Error('Unsupported save version.');
+  if (!s || typeof s !== 'object' || (s.version !== 1 && s.version !== 2)) throw new Error('Unsupported save version.');
   const valid = (v: unknown, max = 1e30) => typeof v === 'number' && Number.isFinite(v) && v >= 0 && v <= max;
   for (const field of ['sparks', 'earned', 'lifetime', 'cores', 'resets', 'clicks']) {
     if (!valid(s[field])) throw new Error('Invalid save values.');
@@ -123,10 +122,16 @@ export function parseSave(raw: string): GameState {
   if (typeof s.mastered !== 'boolean' || typeof s.reducedMotion !== 'boolean') throw new Error('Invalid settings.');
   if (s.discoveries !== undefined && (!Array.isArray(s.discoveries) || s.discoveries.length > 5 || s.discoveries.some((v: unknown) => !Number.isInteger(v) || (v as number) < 0 || (v as number) > 4))) throw new Error('Invalid discoveries.');
   if (s.sound !== undefined && typeof s.sound !== 'boolean') throw new Error('Invalid sound setting.');
+  if (s.legacyDiscoveries !== undefined && (!Array.isArray(s.legacyDiscoveries) || s.legacyDiscoveries.length > 5 || s.legacyDiscoveries.some((v: unknown) => !Number.isInteger(v) || (v as number) < 0 || (v as number) > 4))) throw new Error('Invalid legacy journal.');
+  const legacyCombat = parseCombat(s.combat);
+  const legacyTesla = parseTesla(s.tesla);
+  const migrationRefund = s.version === 1 ? legacyCombat.queue.reduce((a, b) => a + b, 0) : 0;
+  if (s.version === 1) legacyCombat.queue = [];
+  // Legacy combat records remain, but the old destructive simulation never runs.
   // Reconstruct known fields, never merge arbitrary imported properties.
-  return { tesla: parseTesla(s.tesla), combat: parseCombat(s.combat), sound: s.sound ?? true, version: 1, sparks: s.sparks, earned: s.earned, lifetime: s.lifetime, cores: s.cores, resets: s.resets, clicks: s.clicks,
+  return { frontier: s.version === 1 ? freshFrontier() : parseFrontier(s.frontier), tesla: legacyTesla, combat: legacyCombat, sound: s.sound ?? true, version: 2, sparks: s.sparks + migrationRefund, earned: s.earned, lifetime: s.lifetime, cores: s.cores, resets: s.resets, clicks: s.clicks,
     machines: s.machines.map((m: MachineState) => ({ owned: m.owned, manager: m.manager, remaining: m.remaining })),
-    upgrades: s.upgrades, lastSaved: s.lastSaved, mastered: s.mastered, reducedMotion: s.reducedMotion, discoveries: s.discoveries ?? [] };
+    upgrades: s.upgrades, lastSaved: s.lastSaved, mastered: s.mastered, reducedMotion: s.reducedMotion, legacyDiscoveries: s.version === 1 ? s.discoveries ?? [] : s.legacyDiscoveries ?? [], discoveries: s.version === 1 ? (s.discoveries ?? []).filter((i: number) => i < 2) : s.discoveries ?? [] };
 }
 export function resume(s: GameState, now = Date.now()) {
   const seconds = Math.min(OFFLINE_CAP, Math.max(0, (now - s.lastSaved) / 1000));
