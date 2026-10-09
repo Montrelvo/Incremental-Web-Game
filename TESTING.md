@@ -1,46 +1,35 @@
-# Release validation
+# Prototype validation
 
-## Automated checks
+## Current automated results
 
-Run `npm ci`, `npm test`, and `npm run build` with Node 24. CI repeats the tests and production build before Pages deployment.
+- TypeScript validation passed using the bundled Node 24.19.0 runtime.
+- Production Vite build passed. The existing Phaser bundle still produces a size advisory.
+- All 34 tests passed across five simulation suites: 18 retained simulation tests, six standalone frontier tests, and ten economy/migration/progression integration tests.
+- A deterministic integration test starts at zero, earns sparks through clicks and generators, earns scrap from actual kills, buys coil upgrades, and reclaims all three sectors without granting test currency.
 
-The simulation tests verify:
+Frontier coverage includes energy transfers/refunds without false earnings; shared Tesla/cannon targets and single-award kills; no idle drain; shortage behavior; recoverable defeat; manual recovery from zero; failed pushes; one-time claims and capacity; legacy migration with exactly-once prepaid-charge refunds; active saves and offline combat pauses; rejection of invalid defense state.
 
-- The first purchase and one-shot manual production.
-- Equivalent automated production after one large time jump or many small ticks.
-- Bulk purchase prices, milestones, and upgrade multipliers.
-- The eight-hour offline cap and clocks moving backwards.
-- Prestige reward, reset scope, and permanent journal retention.
-- Chapter completion conditions.
-- Save validation and round-tripping.
+## Browser verification
 
-## Browser checks performed during development
+The local Vite server started successfully at http://127.0.0.1:5173/. The connected browser discovered the correct page title, but DOM/screenshot operations timed out or returned no content. Visual layout and interactive browser behavior have not been confirmed for this update. Previous release browser checks are not evidence for the new frontier screen.
 
-- Generated 12 sparks, bought a coil, ran a manual cycle, and verified it stopped.
-- Earned enough for a manager, hired it, and observed automatic output.
-- Checked the desktop layout and a 390 × 844 phone viewport; no horizontal overflow.
-- Opened mobile settings, exported a save, and rejected malformed imported JSON.
-- Imported a later-game fixture through the normal save interface, purchased an upgrade, previewed prestige, and reset. Confirmed ember cores and all five journal discoveries remained.
-- Checked browser error logs: no game runtime errors during this pass.
+## Sequential delivery checks
 
-## Packaging checks
+PR 1 records the roadmap and chat-to-repository audit. PR 2 was checked in an isolated baseline-plus-core project: all 24 tests and TypeScript validation passed. The full PR 3 integration passes all 34 tests, TypeScript validation, and the Node 24 production build. Each PR must pass its own GitHub build before merging. [PR #5](https://github.com/Montrelvo/Incremental-Web-Game/pull/5), the fourth delivery PR, updates player documentation and the delivery record. The original local implementation was not a published release; this series closes that gap.
 
-A clean `npm ci`, production build, Android project generation, and Android asset/plugin sync completed successfully on the development host. The native app was not compiled, signed, or run on an Android device. The generated project includes the App lifecycle and Preferences storage plugins.
+## Manual acceptance pass still needed
 
-The phone viewport is responsive-layout testing, not a substitute for testing real iOS and Android devices. Test actual touch behavior, interruption/resume, audio if later added, storage, and native plugins on those devices before shipping native apps. Desktop installers likewise need platform-specific validation and signing.
+Use a disposable local save or export a backup first.
 
+1. From zero, buy a generator, run a cycle, hire a manager, and build a reserve.
+2. Inspect the frontier map and controls on desktop and at a 390px phone width; check readable controls and no horizontal overflow.
+3. Fill the capacitor, enable refill, activate defense, earn scrap, and buy a coil upgrade.
+4. Queue cannon support and confirm both weapons damage the same enemies; cancel unfired shots and verify the refund.
+5. Move to the workshop while defense is active and confirm enemies continue. Hide the app and confirm only workshop production catches up on return.
+6. Push through a sector, verify the one-time claim reward and increased purchase capacity, then reclaim the remaining sectors.
+7. Allow a disposable bunker to fail, confirm progress is retained, repair it with manually generated energy, and restart.
+8. Reload during a push and confirm enemy health, reserves, upgrades, and territory remain. Import a legacy save and confirm safe inactive migration and exactly-once refunds.
 
-## Combat and feedback update
+## Platform scope
 
-- All 12 simulation tests pass, including the complete 100-enemy campaign, charge spending, damage, queue limits/refunds, completion, old-save migration, and persistence through offline time/rekindling.
-- TypeScript validation and production build pass.
-- Browser: purchased an affordable upgrade; five queued one-charge shots cost five sparks and defeated a 10 HP mob. Reload retained the defeat and spark balance.
-- Desktop and 390px mobile layouts inspected; all three navigation destinations remain accessible. No browser console errors observed. Native packages have not been retested for this update.
-
-
-## Tesla survival update
-
-- 18 simulation tests pass. Added coverage for weighted generator pressure, spawn rate, strict power comparison, per-tick spending, insufficient funds, delayed full-game loss, persistence/migration, and prestige locking.
-- TypeScript validation and production build pass.
-- Local browser test started survival with disposable test progress, exhausted its sparks, observed the full-loss dialog, and reloaded to confirm zero sparks/cores/machines, an empty journal, and a fresh workshop save.
-- Inspected desktop and 390px mobile Tesla layouts and navigation; no console errors observed. The live player save was not used for destructive testing.
+Browser, Electron, and Capacitor share the simulation. Native binaries, mobile lifecycle behavior on physical devices, installers, signing, and platform stores have not been retested for this update. The sequential PR series uses the existing GitHub Actions build and Pages deployment workflow; current deployment results are available in the repository Actions history.
