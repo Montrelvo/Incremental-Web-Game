@@ -1,6 +1,6 @@
 # Bunker reclamation roadmap
 
-Status: core rules and the three-sector playable prototype are merged through PRs #1–#3. The final documentation PR completes the delivery record. See PROJECT_DELIVERY_AUDIT.md for the comparison, ordered merges, and validation. Browser visual acceptance remains unverified.
+Status: core rules and the three-sector playable prototype are merged through PRs #1–#3. PR #5, the fourth delivery PR, completes the documentation and delivery record. See PROJECT_DELIVERY_AUDIT.md for the comparison, ordered merges, and validation. Browser visual acceptance remains unverified.
 
 ## Shared vision
 Generate sparks at the bunker; use them to power Tesla defense and cannon support; recover scrap from enemies; upgrade the coil; reclaim territory; defend a stronger frontier; repeat.

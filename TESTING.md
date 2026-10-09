@@ -15,7 +15,7 @@ The local Vite server started successfully at http://127.0.0.1:5173/. The connec
 
 ## Sequential delivery checks
 
-PR 1 records the roadmap and chat-to-repository audit. PR 2 was checked in an isolated baseline-plus-core project: all 24 tests and TypeScript validation passed. The full PR 3 integration passes all 34 tests, TypeScript validation, and the Node 24 production build. Each PR must pass its own GitHub build before merging. PR 4 updates player documentation and the delivery record. The original local implementation was not a published release; this series closes that gap.
+PR 1 records the roadmap and chat-to-repository audit. PR 2 was checked in an isolated baseline-plus-core project: all 24 tests and TypeScript validation passed. The full PR 3 integration passes all 34 tests, TypeScript validation, and the Node 24 production build. Each PR must pass its own GitHub build before merging. [PR #5](https://github.com/Montrelvo/Incremental-Web-Game/pull/5), the fourth delivery PR, updates player documentation and the delivery record. The original local implementation was not a published release; this series closes that gap.
 
 ## Manual acceptance pass still needed
 
