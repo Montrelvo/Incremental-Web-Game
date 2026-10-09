@@ -1,0 +1,9 @@
+Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.
+
+Attach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.
+
+REQUEST: Small localized metal-on-metal door spark burst. One static reference image. Actual animation and reduced-motion alternatives will be implemented procedurally; no sprite sheet or fake frame grid.
+
+COMPOSITION AND OUTPUT: Transparent background, square canvas with wide safe margins.
+
+REFERENCE INPUTS: Approved art-direction sheet.

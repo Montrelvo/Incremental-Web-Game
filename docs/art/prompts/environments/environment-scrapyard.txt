@@ -1,0 +1,9 @@
+Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.
+
+Attach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.
+
+REQUEST: Wreck stacks, dismantling bench, distant crane and recognizable prototype remains. Empty environment plate. Side-view battle composition with clear horizontal floor, left quarter reserved for bunker and defenses, open central lane, threats enter from right. Background landmarks must not obscure combat silhouettes.
+
+COMPOSITION AND OUTPUT: Very wide landscape approximately 45:13; compatible with a 900 x 260 arena; opaque background.
+
+REFERENCE INPUTS: World style guide; bunker reference; relevant enemy and prototype references.
