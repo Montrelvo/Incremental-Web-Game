@@ -1,0 +1,9 @@
+Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.
+
+Attach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.
+
+REQUEST: Thin bipedal scavenging machine, narrow torso, long uneven legs, small copper core, readable angular silhouette. State: walk-a. A single walking key pose, left support leg forward; identical camera and bounds to idle. This is a key pose for later animation cleanup, not a sprite sheet.
+
+COMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.
+
+REFERENCE INPUTS: Approved scrap-walker-idle image; engineering reference. This is an edit/variant request: attach the named approved base image before submitting. Keep the same camera, canvas, scale, placement, and silhouette except for the requested change.
