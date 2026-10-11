@@ -1,0 +1,9 @@
+Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.
+
+Attach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.
+
+REQUEST: Create an art-only layout concept for a recovered-records book interface: index column, artifact image area, evidence transcription area, compact source strip and visibly separate scientist-recollection panel. Blank fields, no invented text. Metal drawer and paper inspiration. This will be implemented as accessible HTML, not used as a flattened interface.
+
+COMPOSITION AND OUTPUT: Landscape 16:9, opaque background.
+
+REFERENCE INPUTS: Approved art-direction sheet.

@@ -1,0 +1,11 @@
+Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.
+
+Working character design: a lean man in his late fifties, long angular face, tired gray eyes, swept-back graying dark hair, short uneven stubble, weathered charcoal work coat, patched brown waistcoat, insulated left glove, round goggles at the collar, old branching electrical burn on the right wrist. Human and frightened when threatened, without a theatrical villain grin. This design is provisional until its reference sheet is approved.
+
+Attach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.
+
+REQUEST: The scientist in three-quarter profile reaching to operate a chest-high console; omit the console itself.
+
+COMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow.
+
+REFERENCE INPUTS: Scientist reference sheet.
