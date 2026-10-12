@@ -1,0 +1,29 @@
+{
+  "id": "workshop-operating",
+  "requestId": "workshop-operating",
+  "category": "bunker",
+  "title": "Workshop: operating lighting",
+  "phase": "First region",
+  "path": "bunker/workshop-operating.png",
+  "promptPath": "bunker/workshop-operating.json",
+  "requestedFormat": "Landscape 16:9, opaque background",
+  "refs": [
+    "workshop-emergency"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Restore working amber task lights and small cyan powered equipment indicators; preserve the exact workshop layout and props.\n\nCOMPOSITION AND OUTPUT: Landscape 16:9, opaque background.\n\nREFERENCE INPUTS: Approved workshop-emergency image. This is an edit/variant request: attach the named approved base image before submitting. Keep the same camera, canvas, scale, placement, and silhouette except for the requested change.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: workshop-emergency, reference for its subject and materials. Edit image 1 only: brighter task lighting and small cyan indicators. Keep every object and room geometry fixed. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1672,
+  "height": 941,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2938944,
+  "sha256": "24d37262d0684110bd5066e01cc555cb63a1ce0a25e02a36ad13699fba115a14",
+  "gitBlobSha": "43c434afa72d6c942c0420e2fc1160be6b441090",
+  "firstRowTransparentPixels": 0
+}

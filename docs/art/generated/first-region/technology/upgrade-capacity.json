@@ -1,0 +1,30 @@
+{
+  "id": "upgrade-capacity",
+  "requestId": "upgrade-capacity",
+  "category": "technology",
+  "title": "Capacitor expansion module",
+  "phase": "First region",
+  "path": "technology/upgrade-capacity.png",
+  "promptPath": "technology/upgrade-capacity.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "engineering-reference",
+    "capacitor-bank-empty"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Additional capacitor cells matching the existing bank and connection positions.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.\n\nREFERENCE INPUTS: Engineering reference; approved defense coil and capacitor bank.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: engineering-reference, reference for its subject and materials. Image 2: capacitor-bank-empty, reference for its subject and materials. A separate module or prop kit only, not a full tower or background. Match the reference materials. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "superseded",
+  "review": "Superseded first pass retained for comparison. Select upgrade-capacity-v2 instead.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2241650,
+  "sha256": "89888672d55bf174f962e4c98cb1a3022d937996f881a2aca3c314c66062ed3e",
+  "gitBlobSha": "38125b0b3c5eb0bbd5ef499507071ea2e5b9df36",
+  "firstRowTransparentPixels": 1254
+}

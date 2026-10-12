@@ -1,0 +1,29 @@
+{
+  "id": "capacitor-bank-warning",
+  "requestId": "capacitor-bank-warning",
+  "category": "technology",
+  "title": "Capacitor bank: warning",
+  "phase": "First region",
+  "path": "technology/capacitor-bank-warning.png",
+  "promptPath": "technology/capacitor-bank-warning.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "capacitor-bank-empty"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Bank of three upright energy-storage cells with a clear integrated fill gauge; no numerals. State: warning. Depleted reserve, amber warning indicator with distinct triangular shape.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.\n\nREFERENCE INPUTS: Approved capacitor-bank-empty image; engineering reference. This is an edit/variant request: attach the named approved base image before submitting. Keep the same camera, canvas, scale, placement, and silhouette except for the requested change.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: capacitor-bank-empty, reference for its subject and materials. Edit image 1, preserve canvas and fixed mount. Change only requested state. For cannon recoil, move only the barrel slightly rearward; keep mount fixed. Full capacitor means all three cells and gauges equally full; warning means nearly empty with an amber triangular indicator. Retain transparency. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2193724,
+  "sha256": "b821edb6aae2df04bc8754657db7d1e8d1d899d813c40b0d24d8c5ebaff52ee7",
+  "gitBlobSha": "fc68e4ca7cd6b36a47d32f71f5ebeabf1cc183c2",
+  "firstRowTransparentPixels": 1254
+}

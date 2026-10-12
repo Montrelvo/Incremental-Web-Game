@@ -1,0 +1,29 @@
+{
+  "id": "evidence-frame-kit",
+  "requestId": "evidence-frame-kit",
+  "category": "evidence",
+  "title": "Evidence frame kit",
+  "phase": "First region",
+  "path": "evidence/evidence-frame-kit.png",
+  "promptPath": "evidence/evidence-frame-kit.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow",
+  "refs": [
+    "engineering-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Four separated empty evidence frames: worn paper sheet, oxidized metal plate, archival photograph border, recorder casing. Blank central regions for compositing or UI content, no writing.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow.\n\nREFERENCE INPUTS: Approved art-direction sheet.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: engineering-reference, reference for its subject and materials. Evidence study. Do not paint explanatory words or letters. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Frame centers are filled surfaces. Create masks or cutout centers before compositing evidence content.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2735580,
+  "sha256": "3a025dc4521528d4b7f282f24074cabe30fad7ff14c354409bf1050f0c42b152",
+  "gitBlobSha": "2888cdb7a96e7907cf8e2e6e09a6f59bcd2492a7",
+  "firstRowTransparentPixels": 1254
+}

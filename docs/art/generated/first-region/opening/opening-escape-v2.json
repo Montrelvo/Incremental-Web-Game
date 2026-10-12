@@ -1,0 +1,30 @@
+{
+  "id": "opening-escape-v2",
+  "requestId": "opening-escape",
+  "category": "opening",
+  "title": "Escape down the ruined road — revision 2",
+  "phase": "First region",
+  "path": "opening/opening-escape-v2.png",
+  "promptPath": "opening/opening-escape-v2.json",
+  "requestedFormat": "Landscape 16:9, opaque background",
+  "refs": [
+    "scientist-reference",
+    "bunker-reference"
+  ],
+  "prompt": "Wide cinematic story panel for an industrial electrical science-fiction game. Use image1 for the scientist and image2 for bunker design. LONG SIDE VIEW, scientist SMALL in frame at center-right, running LEFT toward a DISTANT amber-lit bunker at the far LEFT. His back and trailing coat face the storm behind him at the RIGHT. The bunker is ahead of him, not behind him. Ruined road curves from right to left into bunker entrance. Tiny indistinct dark pursuers at far right behind him. Huge storm, pale cyan lightning, charcoal steel and aged concrete, amber shelter lights. Convey frightened vulnerability. One landscape16:9 scene, opaque, no text or labels.\n\nPRODUCTION PASS: Use case: illustration-story. Attached images are provisional production references from this batch, not claims of human approval. Image 1: scientist-reference, reference for its subject and materials. Image 2: bunker-reference, reference for its subject and materials.  Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Selected revision restores leftward travel toward shelter and reduces pursuers to distant shapes.",
+  "width": 1672,
+  "height": 941,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 3092417,
+  "sha256": "cd0ec44421476c51fc100b272edd0364cebd2eacd3572c02f66ac6e97c298d45",
+  "gitBlobSha": "76d3eadd0642eb4ec1da3e1f97a8049e8c822577",
+  "firstRowTransparentPixels": 0
+}

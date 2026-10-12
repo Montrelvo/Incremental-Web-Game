@@ -1,0 +1,29 @@
+{
+  "id": "scientist-reference",
+  "requestId": "scientist-reference",
+  "category": "direction",
+  "title": "Scientist reference sheet",
+  "phase": "Reference first",
+  "path": "direction/scientist-reference.png",
+  "promptPath": "direction/scientist-reference.json",
+  "requestedFormat": "Landscape 3:2, opaque neutral gray background",
+  "refs": [
+    "world-style-guide"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nWorking character design: a lean man in his late fifties, long angular face, tired gray eyes, swept-back graying dark hair, short uneven stubble, weathered charcoal work coat, patched brown waistcoat, insulated left glove, round goggles at the collar, old branching electrical burn on the right wrist. Human and frightened when threatened, without a theatrical villain grin. This design is provisional until its reference sheet is approved.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Create a character reference sheet showing front, side, back, face close-up, both hands, coat details and wrist burn. Neutral posture and light, consistent identity across all views. Include the left insulated glove.\n\nCOMPOSITION AND OUTPUT: Landscape 3:2, opaque neutral gray background.\n\nREFERENCE INPUTS: Approved art-direction sheet.\nUse case: stylized-concept. Attached image 1 is the newly generated world style reference, for palette and materials only. Create the requested separate reference sheet; do not reproduce its multi-panel layout unless requested.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1536,
+  "height": 1024,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2713835,
+  "sha256": "3c6fa3ce7a6a227859912d193011cc5c9eee91b4fa5a754bcc8fdaa1f7620a08",
+  "gitBlobSha": "2466e525bf16c35d1ca432848178139a723f064d",
+  "firstRowTransparentPixels": 0
+}

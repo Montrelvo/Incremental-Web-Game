@@ -1,0 +1,29 @@
+{
+  "id": "evidence-relay-evidence",
+  "requestId": "evidence-relay-evidence",
+  "category": "evidence",
+  "title": "Relay switch and recording",
+  "phase": "First region",
+  "path": "evidence/evidence-relay-evidence.png",
+  "promptPath": "evidence/evidence-relay-evidence.json",
+  "requestedFormat": "Landscape 4:3, opaque background",
+  "refs": [
+    "engineering-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Recovered switch assembly with a distinctive hand repair, beside a damaged compact field recorder on a document tray. No readable label.\n\nCOMPOSITION AND OUTPUT: Landscape 4:3, opaque background.\n\nREFERENCE INPUTS: Engineering reference; Relay Grounds background; records station.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: engineering-reference, reference for its subject and materials. Evidence study. Do not paint explanatory words or letters. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1448,
+  "height": 1086,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2536657,
+  "sha256": "e25a8734c19045cc025997ca87ddd2d9e6158eda9ae7ca405b7641c07e31ac24",
+  "gitBlobSha": "21f515046585ce43ea6231ae480329251e748098",
+  "firstRowTransparentPixels": 0
+}

@@ -1,0 +1,29 @@
+{
+  "id": "gauntlet",
+  "requestId": "gauntlet",
+  "category": "scientist",
+  "title": "gauntlet",
+  "phase": "First region",
+  "path": "scientist/gauntlet.png",
+  "promptPath": "scientist/gauntlet.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow",
+  "refs": [
+    "scientist-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: An insulated left glove with a compact copper wrist assembly and shared engineering details.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow.\n\nREFERENCE INPUTS: Scientist reference sheet; engineering reference.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: scientist-reference, reference for its subject and materials. Preserve the exact identity, asymmetrical clothing and left insulated glove from the reference. Full subject within generous safe margins. For portraits use only one head and shoulders. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 1688671,
+  "sha256": "2eca3703bf231fa1b14fc16dc47b23e4f1ad40df9ff638a11afb657fec59d967",
+  "gitBlobSha": "95e40da77ea1c7a3174a6accda7132d64f549bda",
+  "firstRowTransparentPixels": 1254
+}

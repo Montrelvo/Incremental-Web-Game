@@ -1,0 +1,29 @@
+{
+  "id": "environment-scrapyard-v2",
+  "requestId": "environment-scrapyard",
+  "category": "environments",
+  "title": "Scrapyard battlefield — revision 2",
+  "phase": "First region",
+  "path": "environments/environment-scrapyard-v2.png",
+  "promptPath": "environments/environment-scrapyard-v2.json",
+  "requestedFormat": "Very wide landscape approximately 45:13; compatible with a 900 x 260 arena; opaque background",
+  "refs": [
+    "environment-scrapyard"
+  ],
+  "prompt": "Edit this game environment plate. Remove the bunker and ALL shelter architecture on the left. Replace that area with flat empty ground matching the existing road, concrete and rubble materials. Keep the same horizon, weather, lighting and distinct sector background. No people, enemies, defense towers or machines in foreground. A continuous unobstructed side-view combat lane across the lower third, and clear empty space on the left for a separately composited bunker. Opaque panoramic background, same aspect ratio as input.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: environment-scrapyard, reference for its subject and materials.  Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 2172,
+  "height": 724,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2795828,
+  "sha256": "1d514807fa32a03591116296aa2d4dfc61a57dc91b63d766c3588073791b50e2",
+  "gitBlobSha": "810a5c32ff528f16884161db06a4056be51a5eb9",
+  "firstRowTransparentPixels": 0
+}

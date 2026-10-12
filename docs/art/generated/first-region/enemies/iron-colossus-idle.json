@@ -1,0 +1,30 @@
+{
+  "id": "iron-colossus-idle",
+  "requestId": "iron-colossus-idle",
+  "category": "enemies",
+  "title": "Iron Colossus: idle",
+  "phase": "First region",
+  "path": "enemies/iron-colossus-idle.png",
+  "promptPath": "enemies/iron-colossus-idle.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "engineering-reference",
+    "world-style-guide"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Massive siege machine with tall heavy torso, enormous braced forelimbs, multiple grounded feet and prominent protected core; largest of the three. State: idle. Neutral standing pose.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.\n\nREFERENCE INPUTS: Engineering reference.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: engineering-reference, reference for its subject and materials. Image 2: world-style-guide, reference for its subject and materials. Strict left-facing profile, no human features. Shared plate assembly in the chest, but prioritize this enemy silhouette. Transparent isolated cutout. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2549117,
+  "sha256": "6ef9266b7267dd3dfb65bb70943f47a93fe26d133aef0ba695d4b4c864b63377",
+  "gitBlobSha": "f6343aa97b90133c3c75cfb326e288633eee05b4",
+  "firstRowTransparentPixels": 1254
+}

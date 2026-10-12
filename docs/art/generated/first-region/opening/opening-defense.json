@@ -1,0 +1,32 @@
+{
+  "id": "opening-defense",
+  "requestId": "opening-defense",
+  "category": "opening",
+  "title": "The first defensive discharge",
+  "phase": "First region",
+  "path": "opening/opening-defense.png",
+  "promptPath": "opening/opening-defense.json",
+  "requestedFormat": "Landscape 16:9, opaque background",
+  "refs": [
+    "scientist-reference",
+    "bunker-reference",
+    "defense-coil-idle",
+    "scrap-walker-idle"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nWorking character design: a lean man in his late fifties, long angular face, tired gray eyes, swept-back graying dark hair, short uneven stubble, weathered charcoal work coat, patched brown waistcoat, insulated left glove, round goggles at the collar, old branching electrical burn on the right wrist. Human and frightened when threatened, without a theatrical villain grin. This design is provisional until its reference sheet is approved.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Exterior view: the bunker is on the left, a newly powered Tesla defense coil near left-center, a brief cyan discharge strikes a partially obscured approaching machine to the right. Show relief and precarious shelter, keep origin of the threat ambiguous.\n\nCOMPOSITION AND OUTPUT: Landscape 16:9, opaque background.\n\nREFERENCE INPUTS: Scientist reference; bunker reference; enemy references.\n\nPRODUCTION PASS: Use case: illustration-story. Attached images are provisional production references from this batch, not claims of human approval. Image 1: scientist-reference, reference for its subject and materials. Image 2: bunker-reference, reference for its subject and materials. Image 3: defense-coil-idle, reference for its subject and materials. Image 4: scrap-walker-idle, reference for its subject and materials. Keep the machinery in shadow when the scientist is the subject. Maintain consistent identity and architecture. Wide story panel, one scene, no grid. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "superseded",
+  "review": "Superseded first pass retained for comparison. Select opening-defense-v2 instead.",
+  "width": 1672,
+  "height": 941,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2907196,
+  "sha256": "4f0c3b6b04d4671a0f752972e40866cc84498b131e37de89a514fafbba5ed062",
+  "gitBlobSha": "ee8aac5b04b79edb2c768b148c872d07f7857099",
+  "firstRowTransparentPixels": 0
+}

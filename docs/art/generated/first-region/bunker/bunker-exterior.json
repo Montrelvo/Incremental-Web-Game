@@ -1,0 +1,29 @@
+{
+  "id": "bunker-exterior",
+  "requestId": "bunker-exterior",
+  "category": "bunker",
+  "title": "Bunker exterior: unpowered base",
+  "phase": "First region",
+  "path": "bunker/bunker-exterior.png",
+  "promptPath": "bunker/bunker-exterior.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow",
+  "refs": [
+    "bunker-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Side-view bunker exterior, reinforced entrance and roof exhaust, grounding straps, no defense tower included. No lights active. Isolated structure for compositing on the left side of a battlefield.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow.\n\nREFERENCE INPUTS: Bunker architecture reference.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: bunker-reference, reference for its subject and materials. Isolate ONLY the bunker structure, door CLOSED, all lamps OFF. No surrounding terrain, floor, railings or staircase outside the structure. Orthographic side elevation for a game sprite. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks. Exterior varies from reference vent count and entrance geometry; standardize architecture.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 1667639,
+  "sha256": "68c2e22b967b4434fe1c6aeab80b43a7bcff5a0b60ecfc6d9d666b2227f117ad",
+  "gitBlobSha": "ddbb1076a453344482484d6ad33acabc923fcf71",
+  "firstRowTransparentPixels": 1254
+}

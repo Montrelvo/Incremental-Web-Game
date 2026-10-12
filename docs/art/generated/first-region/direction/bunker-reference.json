@@ -1,0 +1,29 @@
+{
+  "id": "bunker-reference",
+  "requestId": "bunker-reference",
+  "category": "direction",
+  "title": "Bunker architecture reference",
+  "phase": "Reference first",
+  "path": "direction/bunker-reference.png",
+  "promptPath": "direction/bunker-reference.json",
+  "requestedFormat": "Landscape 16:9, opaque background",
+  "refs": [
+    "world-style-guide"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Establish a partly buried concrete bunker with trapezoidal reinforced entrance, three narrow ventilation slots, copper grounding straps and a roof exhaust. Show exterior, floor-plan-like interior arrangement and entrance detail, with consistent construction.\n\nCOMPOSITION AND OUTPUT: Landscape 16:9, opaque background.\n\nREFERENCE INPUTS: Approved art-direction sheet.\nUse case: stylized-concept. Attached image 1 is the newly generated world style reference, for palette and materials only. Create the requested separate reference sheet; do not reproduce its multi-panel layout unless requested.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1672,
+  "height": 941,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 3191143,
+  "sha256": "5fe581ad46824afd62dee790a80160e5a6864c92e44345c8acfe6f9136583eef",
+  "gitBlobSha": "0bbfb72d65b0bd5a5db7ef8dcd739a9b69e07c2d",
+  "firstRowTransparentPixels": 0
+}
