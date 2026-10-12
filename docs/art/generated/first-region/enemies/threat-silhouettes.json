@@ -1,0 +1,32 @@
+{
+  "id": "threat-silhouettes",
+  "requestId": "threat-silhouettes",
+  "category": "enemies",
+  "title": "Opening threat silhouettes",
+  "phase": "First region",
+  "path": "enemies/threat-silhouettes.png",
+  "promptPath": "enemies/threat-silhouettes.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow",
+  "refs": [
+    "scrap-walker-idle",
+    "steel-sentinel-idle",
+    "iron-colossus-idle",
+    "engineering-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Separated dark silhouettes of the approved Walker, Sentinel and Colossus in pursuit, faint cyan light in joints, no identifying internal detail.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow.\n\nREFERENCE INPUTS: Approved enemy images.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: scrap-walker-idle, reference for its subject and materials. Image 2: steel-sentinel-idle, reference for its subject and materials. Image 3: iron-colossus-idle, reference for its subject and materials. Image 4: engineering-reference, reference for its subject and materials. Use the established machine geometry. For attachment kits separate the small parts clearly with generous gaps; no complete new robot. Internals must visibly show the same three insulators and clipped plate. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Too much internal hardware remains visible and figures overlap. Use as a grouping study; simplify and separate before the origin-concealing opening.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 1643322,
+  "sha256": "d73396bfe1f7a087ee674a33e6bc96cee56a658d9236af058c1e7f277a9fec70",
+  "gitBlobSha": "557e7dabcfda90b0ed46d811cd2641021f856cb6",
+  "firstRowTransparentPixels": 1254
+}

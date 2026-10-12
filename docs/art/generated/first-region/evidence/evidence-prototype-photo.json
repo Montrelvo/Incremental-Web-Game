@@ -1,0 +1,30 @@
+{
+  "id": "evidence-prototype-photo",
+  "requestId": "evidence-prototype-photo",
+  "category": "evidence",
+  "title": "Prototype photograph",
+  "phase": "First region",
+  "path": "evidence/evidence-prototype-photo.png",
+  "promptPath": "evidence/evidence-prototype-photo.json",
+  "requestedFormat": "Landscape 4:3, opaque background",
+  "refs": [
+    "scientist-earlier",
+    "scrap-walker-idle"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nWorking character design: a lean man in his late fifties, long angular face, tired gray eyes, swept-back graying dark hair, short uneven stubble, weathered charcoal work coat, patched brown waistcoat, insulated left glove, round goggles at the collar, old branching electrical burn on the right wrist. Human and frightened when threatened, without a theatrical villain grin. This design is provisional until its reference sheet is approved.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: A weathered archival photograph of the earlier scientist standing beside an intact early Scrap Walker prototype in a workshop. Recognizable face and machine geometry, awkward reserved posture. No caption.\n\nCOMPOSITION AND OUTPUT: Landscape 4:3, opaque background.\n\nREFERENCE INPUTS: Earlier scientist reference; Scrap Walker reference.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: scientist-earlier, reference for its subject and materials. Image 2: scrap-walker-idle, reference for its subject and materials. One archival photograph. The scientist visibly resembles the reference, but has fewer gray hairs and cleaner earlier work clothes; machine powered down in a safe workshop. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Archival border and recognizable identity work; the earlier scientist still appears near current age.",
+  "width": 1448,
+  "height": 1086,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2760849,
+  "sha256": "b2842b05f7d2cdb5980fed4d3a179409b531897a620203c9eccbda8f6d436194",
+  "gitBlobSha": "b7475871b3d0d40ebc0eb19f9069298021c94148",
+  "firstRowTransparentPixels": 0
+}

@@ -1,0 +1,30 @@
+{
+  "id": "production-coil-idle",
+  "requestId": "production-coil-idle",
+  "category": "technology",
+  "title": "Production copper coil: idle",
+  "phase": "First region",
+  "path": "technology/production-coil-idle.png",
+  "promptPath": "technology/production-coil-idle.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "engineering-reference",
+    "world-style-guide"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Compact enclosed benchtop copper production winding, visibly different from an outdoor defense tower. State: idle. \n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.\n\nREFERENCE INPUTS: Engineering reference.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: engineering-reference, reference for its subject and materials. Image 2: world-style-guide, reference for its subject and materials. Use a clean orthographic side view, keep floor absent and alpha genuinely transparent. A single machine only. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2078636,
+  "sha256": "52ad13667acfdf85ea114f235b27934a4a4dfa92dc8640e117e3087b0d8072be",
+  "gitBlobSha": "09db51c2104b5bb8452b28c01adfee1295f2f710",
+  "firstRowTransparentPixels": 1254
+}

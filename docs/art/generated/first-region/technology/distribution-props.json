@@ -1,0 +1,30 @@
+{
+  "id": "distribution-props",
+  "requestId": "distribution-props",
+  "category": "technology",
+  "title": "Power distribution prop kit",
+  "phase": "First region",
+  "path": "technology/distribution-props.png",
+  "promptPath": "technology/distribution-props.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "engineering-reference",
+    "defense-coil-idle"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Separated coiled cable, breaker box, grounding rod, analog meter and relay box, spaced for extraction.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.\n\nREFERENCE INPUTS: Engineering reference; approved defense coil and capacitor bank.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: engineering-reference, reference for its subject and materials. Image 2: defense-coil-idle, reference for its subject and materials. A separate module or prop kit only, not a full tower or background. Match the reference materials. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2072960,
+  "sha256": "b591f732d7a23a58ad86feceac17f91ebd8d7df0236a145718b75b74e3682c93",
+  "gitBlobSha": "e732286b59449212bbd9ccfcc3897331967d35eb",
+  "firstRowTransparentPixels": 1254
+}

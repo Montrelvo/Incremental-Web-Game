@@ -1,0 +1,29 @@
+{
+  "id": "steel-sentinel-walk-b",
+  "requestId": "steel-sentinel-walk-b",
+  "category": "enemies",
+  "title": "Steel Sentinel: walk-b",
+  "phase": "First region",
+  "path": "enemies/steel-sentinel-walk-b.png",
+  "promptPath": "enemies/steel-sentinel-walk-b.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "steel-sentinel-idle"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Broad armored machine with squared shoulders, reinforced short legs, shield-like chest and exposed joint windings; larger than the Walker. State: walk-b. A single walking key pose, right support leg forward; identical camera and bounds to idle. This is a key pose for later animation cleanup, not a sprite sheet.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.\n\nREFERENCE INPUTS: Approved steel-sentinel-idle image; engineering reference. This is an edit/variant request: attach the named approved base image before submitting. Keep the same camera, canvas, scale, placement, and silhouette except for the requested change.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: steel-sentinel-idle, reference for its subject and materials. Edit the exact machine in image 1, one single pose only. Preserve armor design, leg count, camera and scale. Right supporting leg forward, left supporting leg back, visibly opposite gait to walk-a. Keep transparent background and full silhouette within safe margins. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks. Pose study only: align scale, feet, pivots, anatomy and armor, and refine gait separation before animation.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2341605,
+  "sha256": "e26bcb3b4a9880451f3c394acee512ebb7271003abbda2300a2d8887b6eeb68b",
+  "gitBlobSha": "a77771a65399dee11a580e2ff0ab04ee0dfa0177",
+  "firstRowTransparentPixels": 1254
+}

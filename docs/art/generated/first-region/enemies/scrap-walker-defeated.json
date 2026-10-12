@@ -1,0 +1,29 @@
+{
+  "id": "scrap-walker-defeated",
+  "requestId": "scrap-walker-defeated",
+  "category": "enemies",
+  "title": "Scrap Walker: defeated",
+  "phase": "First region",
+  "path": "enemies/scrap-walker-defeated.png",
+  "promptPath": "enemies/scrap-walker-defeated.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "scrap-walker-idle"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Thin bipedal scavenging machine, narrow torso, long uneven legs, small copper core, readable angular silhouette. State: defeated. Collapsed mechanical wreck; expose its shared engineering assembly, no organic gore.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.\n\nREFERENCE INPUTS: Approved scrap-walker-idle image; engineering reference. This is an edit/variant request: attach the named approved base image before submitting. Keep the same camera, canvas, scale, placement, and silhouette except for the requested change.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: scrap-walker-idle, reference for its subject and materials. Edit the exact machine in image 1, one single pose only. Preserve armor design, leg count, camera and scale. Clearly collapsed disabled machine with exposed shared copper core, no standing pose. Keep transparent background and full silhouette within safe margins. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks. Pose study only: align scale, feet, pivots, anatomy and armor, and refine gait separation before animation.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 1254068,
+  "sha256": "7efe65620821c8a6e2996235254cd5909159ee625d920c87dbb786c04bb0b45f",
+  "gitBlobSha": "99a9a57f859926cb77120ac6d4a5932b56f3c105",
+  "firstRowTransparentPixels": 1254
+}

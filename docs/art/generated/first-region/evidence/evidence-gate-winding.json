@@ -1,0 +1,29 @@
+{
+  "id": "evidence-gate-winding",
+  "requestId": "evidence-gate-winding",
+  "category": "evidence",
+  "title": "Perimeter gate winding",
+  "phase": "First region",
+  "path": "evidence/evidence-gate-winding.png",
+  "promptPath": "evidence/evidence-gate-winding.json",
+  "requestedFormat": "Landscape 4:3, opaque background",
+  "refs": [
+    "engineering-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Artifact close-up: broken gate winding with two visible rewinds and a bent fastening plate. Shared signature matches defense hardware exactly.\n\nCOMPOSITION AND OUTPUT: Landscape 4:3, opaque background.\n\nREFERENCE INPUTS: Engineering reference; Perimeter background.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: engineering-reference, reference for its subject and materials. Evidence study. Do not paint explanatory words or letters. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1448,
+  "height": 1086,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2691353,
+  "sha256": "1340e5443d41f3ebabacf18e3374b893a88f579aaa3e5e9e6b9b96d393b1a236",
+  "gitBlobSha": "a84c4e2db8e85f3f654c3f217a970b75acc26f7f",
+  "firstRowTransparentPixels": 0
+}

@@ -1,0 +1,32 @@
+{
+  "id": "enemy-internals",
+  "requestId": "enemy-internals",
+  "category": "enemies",
+  "title": "Exposed internal mechanism",
+  "phase": "First region",
+  "path": "enemies/enemy-internals.png",
+  "promptPath": "enemies/enemy-internals.json",
+  "requestedFormat": "Landscape 16:9, opaque background",
+  "refs": [
+    "scrap-walker-idle",
+    "steel-sentinel-idle",
+    "iron-colossus-idle",
+    "engineering-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Close-up of an opened machine chest revealing the exact signature winding, insulators and clipped plate used in the scientist technology. Make the match observable.\n\nCOMPOSITION AND OUTPUT: Landscape 16:9, opaque background.\n\nREFERENCE INPUTS: Engineering reference; approved Scrap Walker.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: scrap-walker-idle, reference for its subject and materials. Image 2: steel-sentinel-idle, reference for its subject and materials. Image 3: iron-colossus-idle, reference for its subject and materials. Image 4: engineering-reference, reference for its subject and materials. Use the established machine geometry. For attachment kits separate the small parts clearly with generous gaps; no complete new robot. Internals must visibly show the same three insulators and clipped plate. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1672,
+  "height": 940,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2791851,
+  "sha256": "3e839eb5b9010f8a92adea6537a5e36399e7bf7b5cebcb8cf73c1149c11addc8",
+  "gitBlobSha": "38a7c75ecacadfd8759f893166df32069e2bd07b",
+  "firstRowTransparentPixels": 0
+}

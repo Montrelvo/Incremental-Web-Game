@@ -1,0 +1,29 @@
+{
+  "id": "engineering-reference",
+  "requestId": "engineering-reference",
+  "category": "direction",
+  "title": "Engineering signature reference",
+  "phase": "Reference first",
+  "path": "direction/engineering-reference.png",
+  "promptPath": "direction/engineering-reference.json",
+  "requestedFormat": "Landscape 3:2, opaque neutral gray background",
+  "refs": [
+    "world-style-guide"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Show the signature winding, three insulators and clipped fastening plate as one clear assembly, plus close-up views of the materials and fasteners. This exact assembly will appear in defense machinery and enemy interiors.\n\nCOMPOSITION AND OUTPUT: Landscape 3:2, opaque neutral gray background.\n\nREFERENCE INPUTS: Approved art-direction sheet.\nUse case: stylized-concept. Attached image 1 is the newly generated world style reference, for palette and materials only. Create the requested separate reference sheet; do not reproduce its multi-panel layout unless requested.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1536,
+  "height": 1024,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2465080,
+  "sha256": "393f64d9fd8730e28ef646e7aa1e87b16b36a62d6851102dbaeee78b5055e675",
+  "gitBlobSha": "577266c07cef0d43fb852090846d1a3874e943fd",
+  "firstRowTransparentPixels": 0
+}

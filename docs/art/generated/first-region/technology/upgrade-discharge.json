@@ -1,0 +1,30 @@
+{
+  "id": "upgrade-discharge",
+  "requestId": "upgrade-discharge",
+  "category": "technology",
+  "title": "Discharge winding module",
+  "phase": "First region",
+  "path": "technology/upgrade-discharge.png",
+  "promptPath": "technology/upgrade-discharge.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "engineering-reference",
+    "defense-coil-idle"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: A heavier replacement winding module for the defense coil, aligned to the coil base reference.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.\n\nREFERENCE INPUTS: Engineering reference; approved defense coil and capacitor bank.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: engineering-reference, reference for its subject and materials. Image 2: defense-coil-idle, reference for its subject and materials. A separate module or prop kit only, not a full tower or background. Match the reference materials. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Left connector approaches canvas edge; add safe margin before attachment use.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2139818,
+  "sha256": "748779e74e3013a54a6dd29a6a2300ddf87d465d1eac64fdd1ed3846e9fae42c",
+  "gitBlobSha": "5c0a61c40df6a495c632e7b57dacadc74fb284c4",
+  "firstRowTransparentPixels": 1254
+}

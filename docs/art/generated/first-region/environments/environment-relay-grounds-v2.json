@@ -1,0 +1,29 @@
+{
+  "id": "environment-relay-grounds-v2",
+  "requestId": "environment-relay-grounds",
+  "category": "environments",
+  "title": "Relay Grounds battlefield — revision 2",
+  "phase": "First region",
+  "path": "environments/environment-relay-grounds-v2.png",
+  "promptPath": "environments/environment-relay-grounds-v2.json",
+  "requestedFormat": "Very wide landscape approximately 45:13; compatible with a 900 x 260 arena; opaque background",
+  "refs": [
+    "environment-relay-grounds"
+  ],
+  "prompt": "Edit this game environment plate. Remove the bunker and ALL shelter architecture on the left. Replace that area with flat empty ground matching the existing road, concrete and rubble materials. Keep the same horizon, weather, lighting and distinct sector background. No people, enemies, defense towers or machines in foreground. A continuous unobstructed side-view combat lane across the lower third, and clear empty space on the left for a separately composited bunker. Opaque panoramic background, same aspect ratio as input.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: environment-relay-grounds, reference for its subject and materials.  Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Clear compositing lane achieved; add distinctive relay pylons in separate layers.",
+  "width": 2170,
+  "height": 725,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2748443,
+  "sha256": "a3492e201de4e15d755d212dfab4dffc06e1d27021d6d7ed6faa9d757508dbf1",
+  "gitBlobSha": "6e2b13b979fa7402d173742b1cad964a31c1dc99",
+  "firstRowTransparentPixels": 0
+}

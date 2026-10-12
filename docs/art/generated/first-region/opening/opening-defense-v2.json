@@ -1,0 +1,29 @@
+{
+  "id": "opening-defense-v2",
+  "requestId": "opening-defense",
+  "category": "opening",
+  "title": "The first defensive discharge — revision 2",
+  "phase": "First region",
+  "path": "opening/opening-defense-v2.png",
+  "promptPath": "opening/opening-defense-v2.json",
+  "requestedFormat": "Landscape 16:9, opaque background",
+  "refs": [
+    "opening-defense"
+  ],
+  "prompt": "Edit this cinematic panel. Remove the scientist from the left foreground completely, replacing him with the same rocks and ground. He is safely inside the bunker and should not be visible outdoors. Close the bunker door but preserve amber light at its seams. Keep the bunker at left, Tesla coil near left-center, and cyan discharge striking the approaching robot on the right. Preserve all other scene composition, materials, architecture and storm lighting.\n\nPRODUCTION PASS: Use case: illustration-story. Attached images are provisional production references from this batch, not claims of human approval. Image 1: opening-defense, reference for its subject and materials.  Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Selected revision removes the scientist outdoors and closes the bunker door.",
+  "width": 1672,
+  "height": 941,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2825562,
+  "sha256": "d1f8f6504322319bc8eae5c8737926f6e9a2665043ccbae534a38a3aa326570a",
+  "gitBlobSha": "f58ed91a0ee2ecb23ad7e3d92c12e5a55b09c749",
+  "firstRowTransparentPixels": 0
+}

@@ -1,0 +1,30 @@
+{
+  "id": "environment-perimeter",
+  "requestId": "environment-perimeter",
+  "category": "environments",
+  "title": "Perimeter battlefield",
+  "phase": "First region",
+  "path": "environments/environment-perimeter.png",
+  "promptPath": "environments/environment-perimeter.json",
+  "requestedFormat": "Very wide landscape approximately 45:13; compatible with a 900 x 260 arena; opaque background",
+  "refs": [
+    "bunker-reference",
+    "world-style-guide"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Broken fence, ruined gate, grounded defense posts, footprints and scorched earth. Empty environment plate. Side-view battle composition with clear horizontal floor, left quarter reserved for bunker and defenses, open central lane, threats enter from right. Background landmarks must not obscure combat silhouettes.\n\nCOMPOSITION AND OUTPUT: Very wide landscape approximately 45:13; compatible with a 900 x 260 arena; opaque background.\n\nREFERENCE INPUTS: World style guide; bunker reference; relevant enemy and prototype references.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: bunker-reference, reference for its subject and materials. Image 2: world-style-guide, reference for its subject and materials. Paint one continuous empty environment. Keep foreground combat ground calm and mostly flat; no machines, characters or built-in UI. For battlefield plates aim for very wide 45:13 composition, no letterboxing. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "superseded",
+  "review": "Superseded first pass retained for comparison. Select environment-perimeter-v2 instead.",
+  "width": 2079,
+  "height": 756,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2813058,
+  "sha256": "9ca2844cb0e964241157d19e86d8bb69fb77be33699e36292d2bb00e75d43074",
+  "gitBlobSha": "e3f93d223077e7e21384c9a50653b1a1b011d5e2",
+  "firstRowTransparentPixels": 0
+}

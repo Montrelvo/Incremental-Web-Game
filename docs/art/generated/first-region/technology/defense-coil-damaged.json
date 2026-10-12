@@ -1,0 +1,29 @@
+{
+  "id": "defense-coil-damaged",
+  "requestId": "defense-coil-damaged",
+  "category": "technology",
+  "title": "Defense Tesla coil: damaged",
+  "phase": "First region",
+  "path": "technology/defense-coil-damaged.png",
+  "promptPath": "technology/defense-coil-damaged.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "defense-coil-idle"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Tall outdoor Tesla tower with discharge terminal at upper center, copper shaft windings and stable base. State: damaged. \n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera.\n\nREFERENCE INPUTS: Approved defense-coil-idle image; engineering reference. This is an edit/variant request: attach the named approved base image before submitting. Keep the same camera, canvas, scale, placement, and silhouette except for the requested change.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: defense-coil-idle, reference for its subject and materials. This is an edit of image 1. Preserve exact canvas size and object placement, silhouette, terminal/muzzle anchors and baseline. Change only the requested state. Retain transparent background. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 1219801,
+  "sha256": "b44f441ddcd7844b60348609655846d918a8b0621dfa3277dcdff8b4ac9cbce2",
+  "gitBlobSha": "66d60aae3777bee5dcce2f762876405460e01421",
+  "firstRowTransparentPixels": 1254
+}

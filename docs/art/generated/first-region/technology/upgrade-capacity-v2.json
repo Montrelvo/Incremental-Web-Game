@@ -1,0 +1,29 @@
+{
+  "id": "upgrade-capacity-v2",
+  "requestId": "upgrade-capacity",
+  "category": "technology",
+  "title": "Capacitor expansion module — revision 2",
+  "phase": "First region",
+  "path": "technology/upgrade-capacity-v2.png",
+  "promptPath": "technology/upgrade-capacity-v2.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow, orthographic side view, facing left, baseline near the bottom, neutral camera",
+  "refs": [
+    "capacitor-bank-empty"
+  ],
+  "prompt": "Create one isolated upgrade attachment matching the reference capacitor bank: a SINGLE additional glass energy storage cell in its own copper and steel cradle, one short connector cable and mounting bracket. Do not reproduce the entire three-cell bank. One small module only, no floor or backdrop, transparent square canvas, generous empty margins.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: capacitor-bank-empty, reference for its subject and materials.  Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Selected revision provides one extra storage cell instead of reproducing the whole bank.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 901448,
+  "sha256": "8e81d18de04c6376244c0fe1569440cf4c795320dfe561d76ffa698975a7fc02",
+  "gitBlobSha": "405192e15ace249e353fbff42abe484a1ada042f",
+  "firstRowTransparentPixels": 1254
+}

@@ -1,0 +1,30 @@
+{
+  "id": "entrance-detail",
+  "requestId": "entrance-detail",
+  "category": "bunker",
+  "title": "Entrance close-up",
+  "phase": "First region",
+  "path": "bunker/entrance-detail.png",
+  "promptPath": "bunker/entrance-detail.json",
+  "requestedFormat": "Landscape 16:9, opaque background",
+  "refs": [
+    "bunker-reference",
+    "engineering-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Close-up of the bunker door, worn latch, emergency switch, scrape marks and copper grounding strap. No people. Match the door used in the opening.\n\nCOMPOSITION AND OUTPUT: Landscape 16:9, opaque background.\n\nREFERENCE INPUTS: Bunker reference; opening door panel.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: bunker-reference, reference for its subject and materials. Image 2: engineering-reference, reference for its subject and materials. Keep a readable composition with uncluttered areas. Do not include people or written labels. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1672,
+  "height": 941,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 3113066,
+  "sha256": "b28f3be209807a8f3f51c245ec0a49331a4dec306a4fef1aeec71485ab64a3d2",
+  "gitBlobSha": "ae5d95f2e183bc2c2ddbb57f944c511871631b64",
+  "firstRowTransparentPixels": 0
+}

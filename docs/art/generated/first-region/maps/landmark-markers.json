@@ -1,0 +1,30 @@
+{
+  "id": "landmark-markers",
+  "requestId": "landmark-markers",
+  "category": "maps",
+  "title": "Map landmark marker concepts",
+  "phase": "First region",
+  "path": "maps/landmark-markers.png",
+  "promptPath": "maps/landmark-markers.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow",
+  "refs": [
+    "regional-map",
+    "bunker-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Four separated marker illustrations: bunker, perimeter gate, scrapyard crane, relay pylon. Bold silhouettes consistent with the map, no text. These are concept references for production SVG markers.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow.\n\nREFERENCE INPUTS: Approved regional map; bunker reference.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: regional-map, reference for its subject and materials. Image 2: bunker-reference, reference for its subject and materials. Exactly four separated miniature landmarks, ample spacing, no text. This is an icon concept sheet, not the full terrain map. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Concept kit only. Needs separated vector or raster exports at map display size.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2187551,
+  "sha256": "1db54d944cc999ebdb8ce5317909f4cf3f01212f6bca42018c5d36472be7ca3f",
+  "gitBlobSha": "e3336883bdfd36fd9448b7ed5c443a9ca2b87196",
+  "firstRowTransparentPixels": 1254
+}

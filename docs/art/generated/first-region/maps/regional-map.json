@@ -1,0 +1,32 @@
+{
+  "id": "regional-map",
+  "requestId": "regional-map",
+  "category": "maps",
+  "title": "First-region map base",
+  "phase": "First region",
+  "path": "maps/regional-map.png",
+  "promptPath": "maps/regional-map.json",
+  "requestedFormat": "Landscape 16:9, opaque background",
+  "refs": [
+    "bunker-reference",
+    "environment-perimeter",
+    "environment-scrapyard",
+    "environment-relay-grounds"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Top-down illustrated regional terrain map: bunker in the west, perimeter fence adjacent, scrapyard east of that, relay grounds farther east. Ruined roads, drainage, concrete and sparse vegetation. Leave landmark centers legible. Do not paint route lines, labels or state markers into the terrain.\n\nCOMPOSITION AND OUTPUT: Landscape 16:9, opaque background.\n\nREFERENCE INPUTS: Bunker reference; three first-region environment backgrounds.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: bunker-reference, reference for its subject and materials. Image 2: environment-perimeter, reference for its subject and materials. Image 3: environment-scrapyard, reference for its subject and materials. Image 4: environment-relay-grounds, reference for its subject and materials. One continuous top-down terrain map, west to east progression, no inset panels and no written labels. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1672,
+  "height": 941,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 4063313,
+  "sha256": "768e7d6b025bc2d936968919a4d258036f17097d002a2a58e53d2ab63663f246",
+  "gitBlobSha": "4e8107eef31f7c3f220c1051c22ce8d37241a6a6",
+  "firstRowTransparentPixels": 0
+}

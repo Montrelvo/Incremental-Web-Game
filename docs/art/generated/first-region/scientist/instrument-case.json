@@ -1,0 +1,29 @@
+{
+  "id": "instrument-case",
+  "requestId": "instrument-case",
+  "category": "scientist",
+  "title": "instrument case",
+  "phase": "First region",
+  "path": "scientist/instrument-case.png",
+  "promptPath": "scientist/instrument-case.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow",
+  "refs": [
+    "engineering-reference"
+  ],
+  "prompt": "Game prop illustration: one open brown leather field case with fitted foam holding an analog multimeter, thermometer, calipers and a folded blank notebook. Ordinary nonfunctional measuring instruments, no weapons. Worn charcoal steel, copper accents and cream ceramic. Transparent background, square canvas, all corners and handles inside a wide empty margin. No writing or logos.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: engineering-reference, reference for its subject and materials.  Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2419484,
+  "sha256": "980f1a1eca6d59ee4de70d844fc425f3d48d3bd73ab55f4c170f2b6bd5b25e54",
+  "gitBlobSha": "7be1a070a266fb541a43d3335dcbd5bc5af0cf56",
+  "firstRowTransparentPixels": 1254
+}

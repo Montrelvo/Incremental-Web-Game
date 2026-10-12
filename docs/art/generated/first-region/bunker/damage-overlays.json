@@ -1,0 +1,30 @@
+{
+  "id": "damage-overlays",
+  "requestId": "damage-overlays",
+  "category": "bunker",
+  "title": "Bunker damage overlay kit",
+  "phase": "First region",
+  "path": "bunker/damage-overlays.png",
+  "promptPath": "bunker/damage-overlays.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow",
+  "refs": [
+    "bunker-reference",
+    "engineering-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Separated concrete cracks, scorch marks, broken lamp fragments and patched metal plates; isolated patches with space between them, no building behind them.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow.\n\nREFERENCE INPUTS: Bunker reference; engineering reference.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: bunker-reference, reference for its subject and materials. Image 2: engineering-reference, reference for its subject and materials. Keep a readable composition with uncluttered areas. Do not include people or written labels. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Contains a complete damaged wall assembly; split damage marks from wall geometry before reusable overlays.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 2643962,
+  "sha256": "bcf5fe9ca72d073e12ec4cc04bab699e2b48a800c5b8fb5dbbe3e8493572204b",
+  "gitBlobSha": "16036d7cbd490885bad5a6020d805cc688877007",
+  "firstRowTransparentPixels": 1254
+}

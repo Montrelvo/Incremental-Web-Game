@@ -4,6 +4,7 @@ This folder is the dedicated home for the game's narrative and visual direction,
 
 ## Start here
 
+- [Generated first-region artwork](generated/first-region/README.md): 86 covered requests, 92 saved PNGs, categorized image links and review notes. Open [the artwork gallery](generated/first-region/index.html) locally to browse and copy exact prompts.
 - [Chat inputs and outputs](CHAT_SUMMARY.md): requirements, decisions, deliverables, proposed details and outstanding production work.
 - [Storyline notes](STORYLINE_NOTES.md): escape opening, evidence, recollections and gradual reveal.
 - [Visual asset inventory](VISUAL_ASSET_PLAN.md): asset groups and first-region priorities.
@@ -42,4 +43,4 @@ Regenerate the saved library after editing its source:
 node docs/art/tools/build-art-prompts.mjs
 ```
 
-The tools have no package dependencies and do not modify gameplay files. Artwork generation and integration remain future work.
+The tools have no package dependencies and do not modify gameplay files. First-region production studies are saved under `generated/first-region`; final art cleanup and gameplay integration remain future work.

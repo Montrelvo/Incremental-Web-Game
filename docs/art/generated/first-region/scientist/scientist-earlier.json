@@ -1,0 +1,29 @@
+{
+  "id": "scientist-earlier",
+  "requestId": "scientist-earlier",
+  "category": "scientist",
+  "title": "Earlier scientist reference",
+  "phase": "First region",
+  "path": "scientist/scientist-earlier.png",
+  "promptPath": "scientist/scientist-earlier.json",
+  "requestedFormat": "Landscape 3:2, opaque neutral gray background",
+  "refs": [
+    "scientist-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nWorking character design: a lean man in his late fifties, long angular face, tired gray eyes, swept-back graying dark hair, short uneven stubble, weathered charcoal work coat, patched brown waistcoat, insulated left glove, round goggles at the collar, old branching electrical burn on the right wrist. Human and frightened when threatened, without a theatrical villain grin. This design is provisional until its reference sheet is approved.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: The same scientist approximately ten years younger: darker hair, less weathered face, clean coat, upright posture. Preserve the facial structure and wrist-burn identifying detail. Front and three-quarter views.\n\nCOMPOSITION AND OUTPUT: Landscape 3:2, opaque neutral gray background.\n\nREFERENCE INPUTS: Scientist reference sheet.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: scientist-reference, reference for its subject and materials. Earlier self, unchanged facial structure and right wrist burn; visibly cleaner and approximately ten years younger. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Earlier design remains close to current age and clothing; stronger era distinction is needed.",
+  "width": 1536,
+  "height": 1024,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2285212,
+  "sha256": "f8986815da57ed628e24005152ee0774d12e210b65f9b7f4b1a74c7462d03a0d",
+  "gitBlobSha": "3a0e267212c5cb5b269c37af3cf17f9029a01685",
+  "firstRowTransparentPixels": 0
+}

@@ -1,0 +1,29 @@
+{
+  "id": "bunker-exterior-damaged",
+  "requestId": "bunker-exterior-damaged",
+  "category": "bunker",
+  "title": "Bunker exterior: damaged",
+  "phase": "First region",
+  "path": "bunker/bunker-exterior-damaged.png",
+  "promptPath": "bunker/bunker-exterior-damaged.json",
+  "requestedFormat": "Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow",
+  "refs": [
+    "bunker-exterior"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Add impact cracks, soot, a broken vent and bent door edge while keeping the building recognizable and repairable.\n\nCOMPOSITION AND OUTPUT: Single isolated asset, transparent background, square canvas, entire silhouette inside safe margins, no floor or cast background shadow.\n\nREFERENCE INPUTS: Approved bunker-exterior base. This is an edit/variant request: attach the named approved base image before submitting. Keep the same camera, canvas, scale, placement, and silhouette except for the requested change.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: bunker-exterior, reference for its subject and materials. Edit image 1 only: localized physical damage, keep exact structure, scale and camera. Preserve alpha. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": true,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Candidate for visual review and target-size readability checks. Exterior varies from reference vent count and entrance geometry; standardize architecture.",
+  "width": 1254,
+  "height": 1254,
+  "bitDepth": 8,
+  "colorType": 6,
+  "bytes": 1630059,
+  "sha256": "89c3c221711fc651670cc40c5e1873e0a5d044b18eba85cf6441d5878a08b5ca",
+  "gitBlobSha": "cdee0aa3915a216dc2a6a96aadcca7bd9cedad7a",
+  "firstRowTransparentPixels": 1254
+}

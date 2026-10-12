@@ -1,0 +1,30 @@
+{
+  "id": "records-station",
+  "requestId": "records-station",
+  "category": "bunker",
+  "title": "Records station",
+  "phase": "First region",
+  "path": "bunker/records-station.png",
+  "promptPath": "bunker/records-station.json",
+  "requestedFormat": "Landscape 16:9, opaque background",
+  "refs": [
+    "bunker-reference",
+    "engineering-reference"
+  ],
+  "prompt": "Create artwork for a narrative incremental bunker-defense game. Weathered industrial electrical science fiction; painterly, grounded game illustration with crisp readable silhouettes. Charcoal steel, dirty concrete, aged copper, pale cyan electricity, warm amber shelter lights. Restrained detail at small display sizes. Shared engineering signature: asymmetrical copper winding, three ceramic insulators, hand-cut fastening plate with a clipped upper-right corner. No logos, watermarks, captions, or readable text; evidence text and UI labels will be added separately.\n\nAttach approved style, subject, and location reference images when available. Preserve their identity, proportions, materials, and engineering details exactly. If no reference is attached, use the written working design consistently. Generate one image for this request.\n\nREQUEST: Document drawer, metal tray, task lamp and compact field recorder on a bunker desk; blank paper surfaces and room for interface overlay.\n\nCOMPOSITION AND OUTPUT: Landscape 16:9, opaque background.\n\nREFERENCE INPUTS: Bunker reference; engineering reference.\n\nPRODUCTION PASS: Use case: stylized-concept. Attached images are provisional production references from this batch, not claims of human approval. Image 1: bunker-reference, reference for its subject and materials. Image 2: engineering-reference, reference for its subject and materials. Keep a readable composition with uncluttered areas. Do not include people or written labels. Generate the one requested image, no reference-sheet collage unless this request explicitly asks for a kit or reference sheet.",
+  "transparentRequested": false,
+  "tool": "built-in image_gen",
+  "model": "not exposed by built-in tool",
+  "generationDate": "2026-10-11",
+  "approval": "not human approved",
+  "status": "candidate-review-required",
+  "review": "Exterior view repeats bunker architecture. Replace the window view with terrain to avoid implying a second refuge.",
+  "width": 1672,
+  "height": 940,
+  "bitDepth": 8,
+  "colorType": 2,
+  "bytes": 2641993,
+  "sha256": "a9485da0474e99b08b7d57bceb742caf3b3bbf149e02529f3b3b772a71265ac0",
+  "gitBlobSha": "6415fb6c9d5c7e91cf48f7b438162dc52680f0e9",
+  "firstRowTransparentPixels": 0
+}
